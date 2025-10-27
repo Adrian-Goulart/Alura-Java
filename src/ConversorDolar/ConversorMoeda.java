@@ -1,4 +1,4 @@
-package Conversor;
+package ConversorDolar;
 
 // Crie uma classe ConversorMoeda que implementa uma interface ConversaoFinanceira
 // com o metodo converterDolarParaReal() para converter um valor em dólar para reais.
