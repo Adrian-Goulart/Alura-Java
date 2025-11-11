@@ -1,5 +1,7 @@
 package Pessoa;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -23,5 +25,8 @@ public class Main {
         listaPessoas.add(pessoaTres);
 
         System.out.println("Tamanho da lista: " + listaPessoas.size());
+
+        System.out.println("Primeira pessoa: " + listaPessoas.get(0));
+        System.out.println("Lista completa: " + listaPessoas);
     }
 }
