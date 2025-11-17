@@ -7,20 +7,11 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList<Produto> listaProdutos = new ArrayList<>();
-        Produto produto = new Produto();
-        produto.setNome("Arroz");
-        produto.setPreco(45.99);
-        produto.setQuantidade(60);
+        Produto produto = new Produto("Arroz", 45.99, 60);
 
-        Produto produtoDois = new Produto();
-        produtoDois.setNome("Cereal");
-        produtoDois.setPreco(22.99);
-        produtoDois.setQuantidade(40);
+        Produto produtoDois = new Produto("Cereal", 22.99, 40);
 
-        Produto produtoTres = new Produto();
-        produtoTres.setNome("Biscoito");
-        produtoTres.setPreco(3.50);
-        produtoTres.setQuantidade(35);
+        Produto produtoTres = new Produto("Biscoito", 3.50, 35);
 
         listaProdutos.add(produto);
         listaProdutos.add(produtoDois);
@@ -31,8 +22,18 @@ public class Main {
         int indice = 2;
         System.out.println("Índice: " + indice + " -> " + listaProdutos.get(indice).getNome());
         System.out.println("_______________________________________");
-
         System.out.println(listaProdutos.toString());
 
+
+        ProdutoPerecivel produtoPerecivel = new ProdutoPerecivel("Carne", 79.99, 100, "22/11/25");
+        ProdutoPerecivel produtoPerecivelDois = new ProdutoPerecivel("Bolo", 29.99, 5, "20/11/25");
+        ProdutoPerecivel produtoPerecivelTres = new ProdutoPerecivel("Miojo", 14.99, 15, "20/12/25");
+
+        ArrayList<ProdutoPerecivel> listaProdutoPerecivel = new ArrayList<>();
+        listaProdutoPerecivel.add(produtoPerecivel);
+        listaProdutoPerecivel.add(produtoPerecivelDois);
+        listaProdutoPerecivel.add(produtoPerecivelTres);
+        System.out.println("_______________________________________");
+        System.out.println(listaProdutoPerecivel.toString());
     }
 }
