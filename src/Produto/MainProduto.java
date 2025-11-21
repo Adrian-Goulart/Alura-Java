@@ -1,9 +1,8 @@
 package Produto;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
-public class Main {
+public class MainProduto {
     public static void main(String[] args) {
 
         ArrayList<Produto> listaProdutos = new ArrayList<>();
